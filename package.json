@@ -1,0 +1,26 @@
+{
+  "name": "testcase",
+  "version": "1.0.0",
+  "description": "Тестовое задание",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lostChamp/TestCase-Green-Api.git"
+  },
+  "keywords": [
+    "TestCase",
+    "Green-Api",
+    "lostChamp"
+  ],
+  "author": "Konstantin Kondyurin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lostChamp/TestCase-Green-Api/issues"
+  },
+  "homepage": "https://github.com/lostChamp/TestCase-Green-Api#readme"
+}
