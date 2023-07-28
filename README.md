@@ -70,7 +70,7 @@ You may need to enable script execution (This is an absolutely safe setting)
 
 1) You need to log into PowerShell as an Administrator
 2) Execute the Set-ExecutionPolicy RemoteSigned command
-3) Select the Add item
+3) Select the A item
 
 #### 4) Launch docker and execute the command
 
