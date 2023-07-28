@@ -45,15 +45,12 @@ nx run api:serve
 nx run m1:serve
 ```
 
-<<<<<<< HEAD
 #### Swagger документация по адресу
 
 ```
 http://localhost:8080/api
 ```
 
-=======
->>>>>>> 3794294 (Add Swagger doc)
 # Test case for Green-Api
 
 ## How to launch a project locally?
@@ -100,12 +97,9 @@ nx run-many --target=serve --all --parallel=2
 nx run api:serve
 nx run m1:serve
 ```
-<<<<<<< HEAD
 
 #### Swagger documentation at
 
 ```
 http://localhost:8080/api
 ```
-=======
->>>>>>> 3794294 (Add Swagger doc)
