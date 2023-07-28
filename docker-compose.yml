@@ -2,14 +2,18 @@ version: '3.1'
 services:
   rabbitmq:
     image: rabbitmq:3-management
-    container_name: rabbitmq
+    container_name: rabbitmq-for-green-api
     hostname: rabbitmq
     volumes:
-      - /var/lib/rabbitmq
+      - /var/src/rabbitmq
     ports:
       - '5672:5672'
       - '15672:15672'
     env_file:
       - .env
-    networks:
-      - rabbitmq-net
+networks:
+  default:
+    driver: bridge
+
+
+

@@ -1,6 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "noPropertyAccessFromIndexSignature": false,
     "rootDir": ".",
     "sourceMap": true,
     "declaration": false,
@@ -15,7 +17,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@case/libs": ["libs/libs/src/index.ts"]
+      "@case/contracts": ["libs/contracts/src/index.ts"],
+      "@case/libs": ["libs/src/index.ts"],
+      "@case/rmq-configs": ["libs/rmq-configs/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,10 +1,11 @@
 import {RabbitMQConfig} from '@golevelup/nestjs-rabbitmq';
+import * as process from 'process';
 
-export function amqpM1Config(): RabbitMQConfig {
+export function amqpApiConfig(): RabbitMQConfig {
   return {
     exchanges: [
       {
-        name: 'PostM1Exchange',
+        name: 'PostApiExchange',
         type: 'topic',
       },
     ],

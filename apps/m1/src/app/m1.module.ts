@@ -3,7 +3,10 @@ import { ConfigModule } from '@nestjs/config';
 import { M1Controller } from './m1.controller';
 import { M1Service } from './m1.service';
 import { RabbitMQModule } from '@golevelup/nestjs-rabbitmq';
-import {amqpM1Config} from "../../../../libs/rmq-configs/src";
+import {amqpM1Config} from "@case/rmq-configs";
+
+
+
 
 @Module({
   imports: [

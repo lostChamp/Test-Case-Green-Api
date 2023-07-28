@@ -1,13 +1,16 @@
-import { Controller, Get } from '@nestjs/common';
-
+import { Controller} from '@nestjs/common';
 import { M1Service } from './m1.service';
+import {RabbitRPC} from "@golevelup/nestjs-rabbitmq";
+import {Payload} from "@nestjs/microservices";
+import {getHelloM1Config} from "@case/rmq-configs";
+import {HelloM1Contract} from "@case/contracts";
 
 @Controller()
 export class M1Controller {
-  constructor(private readonly appService: M1Service) {}
+  constructor(private readonly m1Service: M1Service) {}
 
-  @Get()
-  getData() {
-    return this.appService.getData();
+  @RabbitRPC(getHelloM1Config())
+  async getHello(@Payload() name: HelloM1Contract.Request) {
+    return this.m1Service.helloName(name);
   }
 }
